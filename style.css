@@ -20,14 +20,15 @@ body {
 
 @keyframes rocket_icon {
     0% {
-        transform: translate(0, 0) rotate(30deg);
+        transform: translate(0, 0) rotate(45deg);
         left: -5%;
     }
     50% {
-        transform: translate(50vw, -50vh) rotate(50deg);
+        animation-timing-function: ease-out;
+        transform: translate(50vw, -50vh) rotate(45deg);
     }
     100% {
-        transform: translate(100vw, -100vh) rotate(10deg);
+        transform: translate(100vw, -100vh) rotate(45deg);
         left: 10%;
     }
 }
