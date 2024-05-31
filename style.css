@@ -15,21 +15,41 @@ body {
     height: 300px;
     position: absolute;
     bottom: -10%;
-    animation: rocket_icon 6s linear infinite;
+    animation: rocket_icon 8s linear infinite;
 }
-
 @keyframes rocket_icon {
     0% {
-        transform: translate(0, 0) rotate(45deg);
-        left: -5%;
+        transform: translate(0, 0) rotate(0deg);
+    }
+    10% {
+        transform: translate(0, 0) rotate(60deg);
+    }
+    20% {
+        transform: translate(11vw, -vh) rotate(60deg);
+    }
+    30% {
+        transform: translate(22vw, -10vh) rotate(50deg);
+    }
+    40% {
+        transform: translate(34vw, -15vh) rotate(40deg);
     }
     50% {
-        animation-timing-function: ease-out;
-        transform: translate(50vw, -50vh) rotate(45deg);
+        transform: translate(46vw, -20vh) rotate(30deg);
+    }
+    60% {
+        transform: translate(58vw, -35vh) rotate(20deg);
+    }
+    70% {
+        transform: translate(70vw, -50vh) rotate(10deg);
+    }
+    80% {
+        transform: translate(80vw, -70vh) rotate(0deg);
+    }
+    90% {
+        transform: translate(90vw, -85vh) rotate(-10deg);
     }
     100% {
-        transform: translate(100vw, -100vh) rotate(45deg);
-        left: 10%;
+        transform: translate(100vw, -100vh) rotate(-20deg);
     }
 }
 
