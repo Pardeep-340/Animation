@@ -10,12 +10,21 @@
 </head>
 
 <body>
-    <div class="rocket_container">
-        <div class="capsule">
-            <img class="rocket_width" src="/rocket.png" alt="Rocket">
+    <div class="rocket_container ">
+        <div class="capsule rocket">
+            <img class="rocket_width " src="./lotte.gif" alt="Rocket">
         </div>
-
     </div>
+    <script>
+        document.querySelector('.rocket').addEventListener('click', function() {
+            const rocket = this;
+            if (rocket.style.animationPlayState === 'paused') {
+                rocket.style.animationPlayState = 'running';
+            } else {
+                rocket.style.animationPlayState = 'paused';
+            }
+        });
+    </script>
 </body>
 
 </html>
