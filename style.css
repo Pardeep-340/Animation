@@ -80,8 +80,251 @@ body {
         transform: translate(72vw, -12vh) rotate(-24deg);
     }
 
+    /* 65% {
+        transform: translate(80vw, -18vh) rotate(-40deg);
+    }
+
+    70% {
+        transform: translate(86vw, -24vh) rotate(-56deg);
+    }
+
+    75% {
+        transform: translate(92vw, -30vh) rotate(-68deg);
+    }
+*/
+    80% {
+        transform: translate(96vw, -44vh) rotate(-70deg);
+    }
+
+    85% {
+        transform: translate(97vw, -58vh) rotate(-76deg);
+    }
+
+    90% {
+        transform: translate(98vw, -73vh) rotate(-80deg);
+    }
+
+    95% {
+        transform: translate(99vw, -88vh) rotate(-84deg);
+    }
+
     100% {
-        transform: translate(100vw, -100vh) rotate(-70deg);
+        transform: translate(100vw, -100vh) rotate(-88deg);
         opacity: 1;
+    }
+}
+
+@media (max-width:1199.98px) {
+    .capsule {
+        left: -250px;
+    }
+
+    .rocket_width {
+        width: 300px;
+    }
+}
+
+@media (max-width:1023.98px) {
+    .capsule {
+        left: -150px;
+    }
+
+    .rocket_width {
+        width: 200px;
+    }
+}
+
+@media (max-width:767.98px) {
+    .capsule {
+        left: -150px;
+    }
+
+    .rocket_width {
+        width: 200px;
+    }
+
+    @keyframes rocket_icon {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        5% {
+            transform: translateX(6vw);
+        }
+
+        10% {
+            transform: translateX(12vw);
+        }
+
+        15% {
+            transform: translateX(18vw);
+        }
+
+        20% {
+            transform: translateX(24vw);
+        }
+
+        25% {
+            transform: translateX(30vw);
+        }
+
+        30% {
+            transform: translateX(36vw);
+        }
+
+        35% {
+            transform: translateX(42vw);
+        }
+
+        40% {
+            transform: translate(48vw, -2vh) rotate(-4deg);
+        }
+
+        45% {
+            transform: translate(54vw, -4vh) rotate(-8deg);
+        }
+
+        50% {
+            transform: translate(60vw, -6vh) rotate(-14deg);
+        }
+
+        55% {
+            transform: translate(66vw, -8vh) rotate(-18deg);
+        }
+
+        60% {
+            transform: translate(72vw, -12vh) rotate(-26deg);
+        }
+
+        /* 65% {
+            transform: translate(80vw, -18vh) rotate(-40deg);
+        }
+    
+        70% {
+            transform: translate(86vw, -24vh) rotate(-56deg);
+        }
+    
+        75% {
+            transform: translate(92vw, -30vh) rotate(-68deg);
+        }
+    */
+        80% {
+            transform: translate(96vw, -44vh) rotate(-78deg);
+        }
+
+        85% {
+            transform: translate(96vw, -58vh) rotate(-82deg);
+        }
+
+        90% {
+            transform: translate(96vw, -73vh) rotate(-86deg);
+        }
+
+        95% {
+            transform: translate(96vw, -88vh) rotate(-90deg);
+        }
+
+        100% {
+            transform: translate(96vw, -100vh) rotate(-90deg);
+            opacity: 1;
+        }
+    }
+}
+@media (max-width:767.98px) {
+    .capsule {
+        left: -150px;
+    }
+
+    .rocket_width {
+        width: 200px;
+    }
+
+    @keyframes rocket_icon {
+        0% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        5% {
+            transform: translateX(6vw);
+        }
+
+        10% {
+            transform: translateX(12vw);
+        }
+
+        15% {
+            transform: translateX(18vw);
+        }
+
+        20% {
+            transform: translateX(24vw);
+        }
+
+        25% {
+            transform: translateX(30vw);
+        }
+
+        30% {
+            transform: translateX(36vw);
+        }
+
+        35% {
+            transform: translateX(42vw);
+        }
+
+        40% {
+            transform: translate(48vw, -2vh) rotate(-4deg);
+        }
+
+        45% {
+            transform: translate(54vw, -4vh) rotate(-8deg);
+        }
+
+        50% {
+            transform: translate(60vw, -6vh) rotate(-14deg);
+        }
+
+        55% {
+            transform: translate(66vw, -8vh) rotate(-18deg);
+        }
+
+        60% {
+            transform: translate(72vw, -12vh) rotate(-26deg);
+        }
+
+        /* 65% {
+            transform: translate(80vw, -18vh) rotate(-40deg);
+        }
+    
+        70% {
+            transform: translate(86vw, -24vh) rotate(-56deg);
+        }
+    
+        75% {
+            transform: translate(92vw, -30vh) rotate(-68deg);
+        }
+    */
+        80% {
+            transform: translate(96vw, -44vh) rotate(-78deg);
+        }
+
+        85% {
+            transform: translate(96vw, -58vh) rotate(-82deg);
+        }
+
+        90% {
+            transform: translate(96vw, -73vh) rotate(-86deg);
+        }
+
+        95% {
+            transform: translate(96vw, -88vh) rotate(-90deg);
+        }
+
+        100% {
+            transform: translate(96vw, -100vh) rotate(-90deg);
+            opacity: 1;
+        }
     }
 }
