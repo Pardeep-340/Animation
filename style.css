@@ -125,25 +125,6 @@ body {
     }
 
     80% {
-<<<<<<< HEAD
-        transform: translate(100vw, -44vh) rotate(-78 deg);
-    }
-
-    85% {
-        transform: translate(100vw, -58vh) rotate(-82deg);
-    }
-
-    90% {
-        transform: translate(100vw, -73vh) rotate(-86deg);
-    }
-
-    95% {
-        transform: translate(100vw, -88vh) rotate(-90deg);
-    }
-
-    100% {
-        transform: translate(100vw, -100vh) rotate(-90deg);
-=======
         transform: translate(90vw, -54vh) rotate(-54deg);
     }
 
@@ -161,7 +142,6 @@ body {
 
     100% {
         transform: translate(110vw, -100vh) rotate(-69deg);
->>>>>>> 12ae3abcb874db7dc11a29e3508d09e86fb5808c
         opacity: 1;
     }
 }
