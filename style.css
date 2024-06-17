@@ -65,19 +65,19 @@ body {
     }
 
     45% {
-        transform: translate(54vw) rotate(-0.25deg);
+        transform: translate(54vw) ;
     }
 
     50% {
-        transform: translate(60vw, -0.25vh) rotate(-0.5deg);
+        transform: translate(59.9vw, -0.1vh) rotate(-0.25deg);
     }
 
     51% {
-        transform: translate(61vw, -0.5vh) rotate(-0.63deg);
+        transform: translate(61vw, -0.4vh) rotate(-0.50deg);
     }
 
     52% {
-        transform: translate(62vw, -0.75vh) rotate(-0.75deg);
+        transform: translate(62vw, -0.7vh) rotate(-0.75deg);
     }
 
     53% {
@@ -111,7 +111,8 @@ body {
     60% {
         transform: translate(70vw, -10vh) rotate(-10deg);
     }
-/* 
+
+    /* 
     61% {
         transform: translate(71vw, -12vh) rotate(-12deg);
     }
@@ -153,27 +154,27 @@ body {
     }
 
     75% {
-        transform: translate(85vw, -42vh) rotate(-44deg);
+        transform: translate(85vw, -42vh) rotate(-51deg);
     }
 
     80% {
-        transform: translate(90vw, -54vh) rotate(-47deg);
+        transform: translate(90vw, -54vh) rotate(-54deg);
     }
 
     85% {
-        transform: translate(95vw, -66vh) rotate(-50deg);
+        transform: translate(95vw, -66vh) rotate(-57deg);
     }
 
     90% {
-        transform: translate(100vw, -78vh) rotate(-53deg);
+        transform: translate(100vw, -78vh) rotate(-63deg);
     }
 
     95% {
-        transform: translate(105vw, -90vh) rotate(-56deg);
+        transform: translate(105vw, -90vh) rotate(-66deg);
     }
 
     100% {
-        transform: translate(110vw, -100vh) rotate(-59deg);
+        transform: translate(110vw, -100vh) rotate(-69deg);
         opacity: 1;
     }
 }
@@ -246,57 +247,57 @@ body {
         }
 
         45% {
-            transform: translate(54vw, -4vh) rotate(-8deg);
+            transform: translate(54vw, -4vh) rotate(-10deg);
         }
 
         50% {
-            transform: translate(60vw, -6vh) rotate(-14deg);
+            transform: translate(60vw, -6vh) rotate(-16deg);
         }
 
         55% {
-            transform: translate(66vw, -8vh) rotate(-18deg);
+            transform: translate(66vw, -8vh) rotate(-22deg);
         }
 
         60% {
-            transform: translate(72vw, -12vh) rotate(-26deg);
+            transform: translate(72vw, -12vh) rotate(-28deg);
         }
 
-        /* 65% {
-            transform: translate(80vw, -18vh) rotate(-40deg);
+        65% {
+            transform: translate(76vw, -18vh) rotate(-34deg);
         }
-    
+
         70% {
-            transform: translate(86vw, -24vh) rotate(-56deg);
+            transform: translate(80vw, -24vh) rotate(-40deg);
         }
-    
+
         75% {
-            transform: translate(92vw, -30vh) rotate(-68deg);
+            transform: translate(84vw, -30vh) rotate(-50deg);
         }
-    */
+
         80% {
-            transform: translate(96vw, -44vh) rotate(-78deg);
+            transform: translate(88vw, -44vh) rotate(-60deg);
         }
 
         85% {
-            transform: translate(96vw, -58vh) rotate(-82deg);
+            transform: translate(92vw, -58vh) rotate(-70deg);
         }
 
         90% {
-            transform: translate(96vw, -73vh) rotate(-86deg);
+            transform: translate(96vw, -73vh) rotate(-72deg);
         }
 
         95% {
-            transform: translate(96vw, -88vh) rotate(-90deg);
+            transform: translate(100vw, -88vh) rotate(-74deg);
         }
 
         100% {
-            transform: translate(96vw, -100vh) rotate(-90deg);
+            transform: translate(103vw, -100vh) rotate(-76deg);
             opacity: 1;
         }
     }
 }
 
-@media (max-width:767.98px) {
+/* @media (max-width:575.98px) {
     .capsule {
         left: -150px;
     }
@@ -392,4 +393,4 @@ body {
             opacity: 1;
         }
     }
-}
+} */
