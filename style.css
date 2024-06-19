@@ -18,7 +18,7 @@ body {
     position: absolute;
     bottom: 0;
     left: -400px;
-    animation: rocket_icon 5s linear infinite;
+    animation: rocket_icon 5s linear;
     opacity: 0;
 }
 
@@ -37,7 +37,7 @@ body {
     }
 
     55% {
-        transform: translate(56vw, -1vh) rotate(-1deg);
+        transform: translate(56vw, -1vh) rotate(-4deg);
     }
 
     60% {
@@ -45,35 +45,36 @@ body {
     }
 
     65% {
-        transform: translate(70vw, -7vh) rotate(-24deg);
+        transform: translate(71vw, -7vh) rotate(-24deg);
     }
 
     70% {
-        transform: translate(76vw, -11vh) rotate(-39deg);
+        transform: translate(79vw, -11vh) rotate(-39deg);
     }
 
     75% {
-        transform: translate(82vw, -16vh) rotate(-55deg);
+        transform: translate(87vw, -16vh) rotate(-55deg);
     }
 
     80% {
-        transform: translate(88vw, -21vh) rotate(-70deg);
+        transform: translate(94vw, -21vh) rotate(-70deg);
     }
 
     85% {
-        transform: translate(92vw, -31vh) rotate(-80deg);
+        transform: translate(99vw, -31vh) rotate(-80deg);
     }
 
     90% {
-        transform: translate(95vw, -65vh) rotate(-90deg);
+        transform: translate(100vw, -41vh) rotate(-90deg);
     }
 
     95% {
+        transform: translate(100vw, -61vh) rotate(-90deg);
         opacity: 1;
     }
 
     100% {
-        transform: translate(101vw, -110vh) rotate(-90deg);
+        transform: translate(100vw, -104vh) rotate(-90deg);
         opacity: 0;
     }
 }
