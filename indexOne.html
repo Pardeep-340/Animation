@@ -57,17 +57,17 @@
         gsap.registerPlugin(MotionPathPlugin);
 
         const rocketPath = [
-            { x: "60vw", y: "-6vh" },
-            { x: "100vw", y: "-110vh", }
+            { x: "65vw", y: "-6vh" },
+            { x: "105vw", y: "-110vh", }
         ];
 
         gsap.to(".rocket", {
             duration: 5,
-            ease: "power4.in",
+            ease: "power3.in",
 
             motionPath: {
                 path: rocketPath,
-                autoRotate: true,
+                autoRotate: -5,
             }
         });
     </script>
