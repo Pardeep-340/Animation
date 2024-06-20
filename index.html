@@ -4,16 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocket Animation</title>
-    <link rel="stylesheet" href="./style.css">
-
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .button_box{
+            height: 100vh;
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: gray;
+            border-radius: 10px;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="rocket_container ">
-        <div class="capsule">
-            <img class="rocket_width " src="rocket.png" alt="Rocket">
-        </div>
+    <div class="button_box" style="display: flex; align-items: center; gap: 20px; justify-content: center;">
+        <a href="./indexOne.html" class="button">Animation One</a>
+        <a href="./indexTwo.html" class="button">Animation Two</a>
     </div>
 </body>
 
