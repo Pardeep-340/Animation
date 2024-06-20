@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Animation</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            overflow: hidden;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .rocket {
+            width: 300px;
+            position: absolute;
+            bottom: 20px;
+            left: -400px;
+        }
+
+        @media (max-width: 1023.98px) {
+            .rocket {
+                width: 250px;
+                left: -250px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .rocket {
+                width: 200px;
+                left: -200px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .rocket {
+                width: 150px;
+                left: -150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="rocket" src="./rocket.png" alt="rocket-img">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"
+        integrity="sha512-lhK7xTsFM6DPXOtQQyPe+NmpoFEheKDHjM/5QzpFRiE1KySgtBfEzYz4XowvB+CAWcBLBGWinhh41uNaOtrSZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.registerPlugin(MotionPathPlugin);
+
+        const rocketPath = [
+            { x: "82vw", y: "-2vh" },
+            { x: "100vw", y: "-36vh" },
+            { x: "108vw", y: "-103vh", }
+        ];
+
+        gsap.to(".rocket", {
+            duration: 5,
+            ease: "linear",
+
+            motionPath: {
+                path: rocketPath,
+                autoRotate: true,
+            }
+        });
+    </script>
+</body>
+
+</html>
