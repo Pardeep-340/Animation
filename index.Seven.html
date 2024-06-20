@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket Animation</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            overflow: hidden;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .rocket {
+            width: 300px;
+            position: absolute;
+            bottom: 20px;
+            left: -400px;
+        }
+
+        @media (max-width: 1023.98px) {
+            .rocket {
+                width: 250px;
+                left: -250px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .rocket {
+                width: 200px;
+                left: -200px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .rocket {
+                width: 150px;
+                left: -150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="rocket" src="./rocket.webp" alt="rocket-img" />
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script>
+        
+        gsap.registerPlugin(MotionPathPlugin);
+
+        const rocketPath = [
+            { x: "10vw", y: "10vh" },
+            { x: "40vw", y: "-70vh" },
+            { x: "70vw", y: "-10vh" },
+            { x: "130vw", y: "-110vh" },
+        ];
+
+        gsap.to(".rocket", {
+            duration: 10,
+            ease: "power2.in",
+            motionPath: {
+                path: rocketPath,
+                autoRotate: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
