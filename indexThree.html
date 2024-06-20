@@ -23,7 +23,7 @@
             width: 300px;
             position: absolute;
             bottom: 20px;
-            left: -400px;
+            left: -300px;
         }
 
         @media (max-width: 1023.98px) {
@@ -61,14 +61,13 @@
         gsap.registerPlugin(MotionPathPlugin);
 
         const rocketPath = [
-            { x: "82vw", y: "-2vh" },
-            { x: "100vw", y: "-36vh" },
-            { x: "108vw", y: "-110vh", }
+            { x: "80vw", y: "-6vh" },
+            { x: "100vw", y: "-110vh", }
         ];
 
         gsap.to(".rocket", {
             duration: 5,
-            ease: "power2.in",
+            ease: "power4.in",
 
             motionPath: {
                 path: rocketPath,
