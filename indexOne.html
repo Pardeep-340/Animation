@@ -12,17 +12,18 @@
         }
 
         body {
-            height: 100vh;
-            background-color: #F0F0F0;
+            background-color: #f0f0f0;
             overflow: hidden;
             position: relative;
+            height: 100vh;
+            width: 100vw;
         }
 
         .rocket {
-            width: 300px;
+            width: 350px;
             position: absolute;
-            bottom: 0;
-            left: -300px;
+            bottom: 20px;
+            left: -350px;
         }
 
         @media (max-width: 1023.98px) {
@@ -51,216 +52,24 @@
 <body>
     <img class="rocket" src="./rocket.webp" alt="rocket-img">
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
     <script>
-        function animateRocket() {
-            const screenWidth = window.innerWidth;
-            let tl = gsap.timeline();
+        gsap.registerPlugin(MotionPathPlugin);
 
-            if (screenWidth <= 575.98) {
-                tl.to('.rocket', {
-                    duration: 1,
-                    x: '50vw',
-                    ease: "Power1.easeInOut",
-                })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -10, x: '55vw',
-                        y: '-3vh',
+        const rocketPath = [
+            { x: "60vw", y: "-6vh" },
+            { x: "100vw", y: "-110vh", }
+        ];
 
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -30,
-                        x: '60vw',
-                        y: '-6vh',
+        gsap.to(".rocket", {
+            duration: 5,
+            ease: "power4.in",
 
-                    })
-                    .to(
-                        '.rocket', {
-                        duration: 0.12,
-                        rotate: -50,
-                        x: '65vw',
-                        y: '-9vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -75,
-                        x: '70vw',
-                        y: '-12vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 1.5,
-                        x: '110vw',
-                        y: '-110vh',
-
-                    });
-            } else if (screenWidth <= 768) {
-                tl.to('.rocket', {
-                    duration: 2.5,
-                    x: '60vw',
-                    ease: "Power1.easeInOut",
-                })
-                    .to('.rocket', {
-                        duration: 0.1,
-                        rotate: -5,
-                        x: '62vw',
-                        y: '-2vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -10,
-                        x: '64vw',
-                        y: '-4vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -15,
-                        x: '66vw',
-                        y: '-6vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -25,
-                        x: '68vw',
-                        y: '-8vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -35,
-                        x: '70vw',
-                        y: '-10vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.1,
-                        rotate: -50,
-                        x: '72vw',
-                        y: '-12vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 2,
-                        x: '110vw',
-                        y: '-110vh',
-
-                    });
-            } else if (screenWidth <= 1024) {
-                tl.to('.rocket', {
-                    duration: 2.5,
-                    x: '60vw',
-                    ease: "Power1.easeInOut",
-
-                })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -5,
-                        x: '62vw',
-                        y: '-2vh',
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -10,
-                        x: '64vw',
-                        y: '-4vh',
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -15,
-                        x: '66vw',
-                        y: '-6vh',
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -30,
-                        x: '68vw',
-                        y: '-8vh',
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -40,
-                        x: '70vw',
-                        y: '-10vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.12,
-                        rotate: -50,
-                        x: '72vw',
-                        y: '-12vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 1.4,
-                        x: '110vw',
-                        y: '-110vh',
-
-                    });
-            } else {
-                tl.to('.rocket', {
-                    duration: 2.5,
-                    x: '60vw',
-                    ease: "Power1.easeInOut",
-                
-                })
-                    .to('.rocket', {
-                        duration: 0.1,
-                        rotate: -5,
-                        x: '62vw',
-                        y: '-2vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.1,
-                        rotate: -10,
-                        x: '64vw',
-                        y: '-4vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.1,
-                        rotate: -15,
-                        x: '66vw',
-                        y: '-6vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.1,
-                        rotate: -20,
-                        x: '68vw',
-                        y: '-8vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.1,
-                        rotate: -30,
-                        x: '70vw',
-                        y: '-10vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 0.1,
-                        rotate: -42,
-                        x: '72vw',
-                        y: '-12vh',
-
-                    })
-                    .to('.rocket', {
-                        duration: 2,
-                        x: '110vw',
-                        y: '-110vh',
-
-                    });
+            motionPath: {
+                path: rocketPath,
+                autoRotate: true,
             }
-        }
-
-        window.addEventListener('resize', animateRocket);
-        animateRocket();
+        });
     </script>
 </body>
 
