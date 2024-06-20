@@ -17,13 +17,13 @@ body {
 .capsule {
     position: absolute;
     bottom: 0;
-    left: -400px;
-    animation: rocket_icon 5s infinite linear;
+    left: -350px;
+    animation: rocket_icon 5s linear;
     opacity: 0;
 }
 
 .rocket_width {
-    width: 450px;
+    width: 400px;
 }
 
 @keyframes rocket_icon {
@@ -169,6 +169,7 @@ body {
 @media (max-width:767.98px) {
     .capsule {
         left: -150px;
+        bottom: 20px;
     }
 
     .rocket_width {
