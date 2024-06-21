@@ -19,27 +19,30 @@
             width: 100%;
         }
 
-        .rocket {
+        .rocket{
             width: 350px;
             position: absolute;
             bottom: 0;
             left: 70%;
-            transform:rotate(270deg);
+            transform: rotate(270deg);
         }
 
         @media (max-width: 1023.98px) {
-            .rocket {
+
+            .rocket{
                 width: 250px;
             }
         }
 
         @media (max-width: 767.98px) {
-            .rocket {
+
+            .rocket{
                 width: 200px;
             }
         }
 
         @media (max-width: 575.98px) {
+
             .rocket {
                 width: 150px;
             }
@@ -61,7 +64,7 @@
             onComplete: function () {
                 gsap.fromTo(".rocket",
                     { x: "0px", rotate: 270, y: '0vh' }, // Initial state
-                    { x: "300px", rotate: 290, y: '-130vh', duration: 2, ease: "power2.in" } // Final state
+                    { x: "-300px", rotate: 240, y: '-130vh', duration: 2, ease: "power2.in" } // Final state
                 );
             }
         });
